@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Raízen + SalesForce, redefinindo o futuro da Energia com Tecnologia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-bar">
+    <div class="app-bar-esquerda">
+      <a target="_blank" href="https://www.salesforce.com/br/" class="app-bar-link">
+        <img src="salesforcelogo.png" alt="Logo da página" class="app-bar-logo">
+      </a>
+      <a target="_blank" href="https://revenda360.my.salesforce.com/" class="app-bar-link">SalesForce Raízen</a>
+      <a target="_blank" href="https://trailhead.salesforce.com/pt-BR" class="app-bar-link">Trailhead - SalesForce</a>
+      
+    </div>
+    <div class="app-bar-direita">
+    <a target="_blank" href="https://www.raizen.com.br/" class="app-bar-link">Raízen, Redefinindo o futuro da energia</a>
+    </div>
+  </div>
+  <div class="cabecalho">
+    <div class="cabecalho-conteudo">
+      <div class="lista-tags">
+        <span class="tag"><span class="tag-r">R</span>ealizamos</span>
+        <span class="tag"><span class="tag-r">A</span>mpliamos</span>
+        <span class="tag"><span class="tag-r">I</span>ncentivamos</span>
+        <span class="tag"><span class="tag-r">Z</span>elamos</span>
+        </div>
+      <h1 class="cabecalho-titulo">SalesForce + SN&Tech Raízen</h1>
+      <p class="cabecalho-descricao">Valor de Negócio, Melhor experiência do cliente, Modernização de soluções e Cultura Tech!</p>
+    </div>
+  </div>
+  <div class="botao-menu-voltar">  
+    <div class="Voltar"><span><a href="file:///C:/Users/lucas/Projeto%20HTML+CSS%20Infnet/lucasteixeira.html" class="app-bar-link">Página Inicial - Voltar</a></span> </div>
+
+  <span class="botao-menu" style="font-size:25px;cursor:pointer" onclick="openNav()">&#9889; Menu</span>
+  <script>
+    function openNav() {
+      document.getElementById("ismenu-lateral").style.width = "350px";
+    }
+    
+    function closeNav() {
+      document.getElementById("ismenu-lateral").style.width = "0";
+    }
+    </script>
+       </div>
+  <div id="ismenu-lateral" class="menu-lateral">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="file:///C:/Users/lucas/Projeto%20HTML+CSS%20Infnet/crmconceito.html">CRM - O conceito</a>
+    <a href="#">CRM 1º do Mundo, SalesForce</a>
+    <a href="#">SalesForce padrão vs Raízen 360</a>
+    <a href="#">Lead</a>
+    <a href="#">Oportunidade</a>
+    <a href="#">Padronização de dados</a>
+    <a href="#">Criação de relatórios</a>
+    <a href="#">Criação de painéis</a>
+  </div>
+   <div class="conteudo">
+    <h3>Diferenças entre SalesForce padrão e o Raízen</h3>
+
+    <p class="conteudo-paragrafo">O Salesforce dá suporte a vários tipos de objetos diferentes. Eles podem ser objetos padrão, personalizados, externos, eventos de plataforma e BigObjects.</p>
+    <p class="conteudo-paragrafo">Para nós que estamos na linha de frente, só faz sentido analisar dois tipos neste momento:</p>
+    <ul>
+        <li><span class="obj-p">Objetos padrão:</span> são aqueles objetos que vêm incluídos no Salesforce. Objetos como Conta, Contato, Lead e Oportunidade.</li>
+        <li><span class="obj-p">Objetos personalizados:</span> são objetos criados para armazenar informações específicas e únicas para cada B.U. Por exemplo Fatura, IBM, Performance Alvo, etc.</li>
+    </ul>
+    
+    <p class="conteudo-paragrafo"></p>Objetos são contêineres de informação, mas também oferecem funções especiais. Por exemplo, ao criar um objeto personalizado, a plataforma cria itens, como layout de página, para a interface de usuário automaticamente.</p>
+    <br>
+    <img src="unidadesalesforce.png" class="unidadesalesforce">
+
+    <p class="conteudo-paragrafo">Apesar do SalesForce possuir mais de 1.241 campos padrões <a href="https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_list.htm"><span class="zoom">(fonte)</span></a>, 
+        a Org Raízen criou inúmeros outros. Essa criação afeta não só na usabilidade, como também no funcionamento de relatórios, painéis e fluxos.</p>
+    <p class="conteudo-paragrafo">Para exemplificar este impacto, a imagem abaixo mostra como o Objeto “Conta” se relaciona com outros objetos e componentes. <span class="zoom"> (clique na imagem para dar zoom)</span> </p>
+    
+    <a href="https://architect.salesforce.com/1/asset/immutable/s/a566708/assets/images/data-models/sales-cloud-overview-data-model.png" target="_blank"><img src="sales-cloud-overview-data-model.png" class="cloud-overview"></a>
+    <br>
+    <p class="conteudo-paragrafo">Mas na prática, como podemos ver esse impacto no nosso dia a dia?</p>
+    <p class="conteudo-paragrafo">De várias formas. Hoje a Raízen executa o SalesForce dentro de uma grande ORG, o 360, em que todos os campos, componentes e dados possuem correlação uns com os outros. Por isso vemos campos e relatórios de outras BUs, como Combs 
+    e Lubes. Além de prejudicar a usabilidade e dificultar a adesão de novos usuários, uma alteração de Lubes pode ter um efeito cascata em Combs ou Energia.</p>
+    <p class="conteudo-paragrafo">Outro ponto de extrema relevância é a questão de Perfil, que hoje ainda não está bem desenhado no nosso dia a dia:</p>
+    <span class="zoom"> (clique na imagem para dar zoom)</span>
+    <img src="sharingmodel1.png" class="sharingmodel1">
+    <p class="conteudo-paragrafo">Enquanto não for desenhado um perfil para cada escopo e suas limitações, ficaremos a mercê de alterações manuais em propriedades que não deveriam ser alteradas, como o número da UC, informação sensível e que se alterada afeta 
+    o envio da lista de rateio para a distribuidora, contatos, etapas, data de fechamento, entre outras.</p>
+    <br>
+    <h3>Como é a divisão dos componentes e módulos do SalesForce</h3>
+    <p class="conteudo-paragrafo">Agora que já vimos e entendemos um pouco sobre o conceito de CRM, do SalesForce e tivemos uma pequena iniciação de arquitetura, vamos explorar o que, quem e quando.</p>
+    <p class="conteudo-paragrafo">Se CRM é o agregador de toda a relação entre cliente e empresa, faz sentido separarmos em divisões, assim como fazemos em um escritório, afinal de contas, não faz muito sentido colocar um recurso 
+    do Jurídico no meio de um monte de vendedores, não é mesmo?</p>
+    <p class="conteudo-paragrafo">O SalesForce possui 3 grandes módulos, Marketing Cloud, Sales Cloud e Service Cloud, todos interligados porém, com contratações independentes. Focaremos no Sales Cloud que é o módulo que temos o 
+    domínio e utilizamos a mais tempo. 
+    </p>
+    <p class="conteudo-paragrafo">Dentro do Sales temos diversas subcategorias, Lead, Oportunidade, Conta, Contato, Contratos, Produto, Atividades e muitas outras, cada subcategoria é considerada no SalesForce um “BigObject”, isso significa 
+    que o volume de informações que é possível reter e cruzar é tão grande que se torna inimaginável. Essa arquitetura é um diferencial do SalesForce, os demais CRMs de mercado possuem uma estrutura simplificada, sendo o CRM um único objeto, o 
+    que dificulta muito na personalização e no cruzamento de informações. Por isso os relatórios do SalesForce são tão completos, porque é possível tornar cada objeto, padrão ou não, em um campo de filtro/consulta.</p>
+    <p class="conteudo-paragrafo">Então eu posso cruzar quantas atividades foram registradas com um Cliente (Etapa: Ganho) durante a sua jornada conosco? Em Lead e Oportunidade. </p>
+    <p class="conteudo-paragrafo">Sim e não. Vamos começar do porque não é possível. Cada Relatório Padrão puxa as informações de sua própria Subcategoria, então um relatório de Lead não olhará os dados de Oportunidade e vice-versa. 
+    Felizmente há duas formas de fazer esse cruzamento de dados:</p>
+
+    <p class="conteudo-paragrafo">Relatórios personalizados: os administradores/desenvolvedores da plataforma conseguem unificar duas categorias em um único relatório. Dentro de casa temos este exemplo com o relatório “Leads de Energia”, 
+    em que foi usado o relatório de Lead como base e foi agrupado no relatório as subcategorias “Fatura”, “Oportunidade” e “Conta”.
+   <p class="conteudo-paragrafo"> Pergunta, neste relatório personalizado nós teremos todos os campos destas subcategorias? Não necessariamente, há regras de negócio (normas sistêmicas imutáveis) que podem limitar o número de componentes. 
+    Essas regras regem tudo, desde quantos cards aparecerão no funil quando a visualização for Kanban (200), a até quantos caracteres um filtro pode conter (1500). Portanto é importante notificar o administrador ou desenvolvedor, 
+    quais são os campos ESSENCIAIS de cada subcategoria que precisará ficar disponível no relatório.</p>
+    <br>
+    <img src="relatoriosf.png" class="relatoriosf">
+    <br>
+    <p class="conteudo-paragrafo">A segunda forma é através do Tableau, que é uma ferramenta similar ao Power BI mas com integração nativa ao SalesForce. O Tableau consegue consumir as informações diretamente do Data Lake, 
+    ignorando todas as divisões internas e criando visões interativas e mais robustas. (cenário ideal)</p>
+    <h3>Principais diferenças do 360 Raízen (Renováveis) vs SalesForce Padrão</h3>
+
+    <ul>
+        <li>Lead e Oportunidade não representam um CNPJ/CPF e sim uma Unidade Consumidora. Isso significa que uma única negociação, ponto único de contato, pode conter múltiplos Leads e Oportunidades;</li>
+        <li>O registro de atividade e observação pode ser falho aos olhos de quem não conhece o processo. Justamente porque fazemos o registro das atividades manualmente e em um único Lead/Oportunidade, mesmo que haja mais Leads e Oportunidades 
+        nesta negociação. Motivo: caso registremos a atividade em todos os Leads de uma negociação com mais de 1 UC, uma ligação seria refletida "n" vezes no relatório de task, sujando o histórico de dados, sem contar que hoje um SDR/BDR gasta 
+        +/- 2 horas por dia registrando as atividades manualmente. Estimativa de tempo gasto por ano safra em registro manual: 504 horas, o que representa 63 dias úteis por HC;</li>
+        <li>Há um grande volume de Objetos Personalizados criados, sendo muitos legados e histórico de processos não mais executados;</li>
+        <li>Há uma falta de padronização de preenchimento e campos;</li>
+        <li>A maioria das integrações, nativas ou não, precisarão de adaptação por parte do time de desenvolvimento, visto que nossa arquitetura não é comum no mercado ou segue boas práticas de CR. Ainda assim, há a possibilidade de não compatibilidade ou 
+        funcionamento parcial;</li>
+        <li>Não temos um funil por produto ou esteira comercial, compartilharmos as etapas de Leads e Oportunidades com outras frentes, portanto, não temos nem a Jornada de Compra do nosso ICP, nem a Jornada de Vendas das esteiras;</li>
+        <li>É possível elaborar uma Proposta de Geração Distribuída personalizada para cada negociação;</li>
+        <li>Algumas fórmulas não estão "funcionando" corretamente devido ao conflito de "Relações" de alguns objetos Personalizados, como "count record". O que impede a execução de relatórios e painéis mais complexos dentro do ambiente do SF;</li>
+        <li>Compartilhamos o desenvolvimento da plataforma com múltiplas BUs;</li>
+        <li>Herdamos Objetos dessas outras BUs.</li>
+    </ul>
+
+
+        
+  </div>
+<footer>
+  <div></div>
+</footer>
+</body>
+
+</html>
