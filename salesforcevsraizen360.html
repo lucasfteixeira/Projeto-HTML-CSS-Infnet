@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raízen + SalesForce, redefinindo o futuro da Energia com Tecnologia</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +38,7 @@
     </div>
   </div>
   <div class="botao-menu-voltar">  
-    <div class="Voltar"><span><a href="file:///C:/Users/lucas/Projeto%20HTML+CSS%20Infnet/lucasteixeira.html" class="app-bar-link">Página Inicial - Voltar</a></span> </div>
+    <div class="Voltar"><span><a href="/index.html.html" class="app-bar-link">Página Inicial - Voltar</a></span> </div>
 
   <span class="botao-menu" style="font-size:25px;cursor:pointer" onclick="openNav()">&#9889; Menu</span>
   <script>
@@ -52,9 +53,9 @@
        </div>
   <div id="ismenu-lateral" class="menu-lateral">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="file:///C:/Users/lucas/Projeto%20HTML+CSS%20Infnet/crmconceito.html">CRM - O conceito</a>
-    <a href="#">CRM 1º do Mundo, SalesForce</a>
-    <a href="#">SalesForce padrão vs Raízen 360</a>
+    <a href="/crmconceito.html">CRM - O conceito</a>
+    <a href="/salesforceeseuconceito.html">CRM 1º do Mundo, SalesForce</a>
+    <a href="/salesforcevsraizen360.html">SalesForce padrão vs Raízen 360</a>
     <a href="#">Lead</a>
     <a href="#">Oportunidade</a>
     <a href="#">Padronização de dados</a>
@@ -71,22 +72,22 @@
         <li><span class="obj-p">Objetos personalizados:</span> são objetos criados para armazenar informações específicas e únicas para cada B.U. Por exemplo Fatura, IBM, Performance Alvo, etc.</li>
     </ul>
     
-    <p class="conteudo-paragrafo"></p>Objetos são contêineres de informação, mas também oferecem funções especiais. Por exemplo, ao criar um objeto personalizado, a plataforma cria itens, como layout de página, para a interface de usuário automaticamente.</p>
+    <p class="conteudo-paragrafo">Objetos são contêineres de informação, mas também oferecem funções especiais. Por exemplo, ao criar um objeto personalizado, a plataforma cria itens, como layout de página, para a interface de usuário automaticamente.</p>
     <br>
-    <img src="unidadesalesforce.png" class="unidadesalesforce">
+    <img src="unidadesalesforce.png" class="unidadesalesforce" alt="SalesForce">
 
     <p class="conteudo-paragrafo">Apesar do SalesForce possuir mais de 1.241 campos padrões <a href="https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_list.htm"><span class="zoom">(fonte)</span></a>, 
         a Org Raízen criou inúmeros outros. Essa criação afeta não só na usabilidade, como também no funcionamento de relatórios, painéis e fluxos.</p>
     <p class="conteudo-paragrafo">Para exemplificar este impacto, a imagem abaixo mostra como o Objeto “Conta” se relaciona com outros objetos e componentes. <span class="zoom"> (clique na imagem para dar zoom)</span> </p>
     
-    <a href="https://architect.salesforce.com/1/asset/immutable/s/a566708/assets/images/data-models/sales-cloud-overview-data-model.png" target="_blank"><img src="sales-cloud-overview-data-model.png" class="cloud-overview"></a>
+    <a href="https://architect.salesforce.com/1/asset/immutable/s/a566708/assets/images/data-models/sales-cloud-overview-data-model.png" target="_blank"><img src="sales-cloud-overview-data-model.png" class="cloud-overview" alt="Cloud Overview"></a>
     <br>
     <p class="conteudo-paragrafo">Mas na prática, como podemos ver esse impacto no nosso dia a dia?</p>
     <p class="conteudo-paragrafo">De várias formas. Hoje a Raízen executa o SalesForce dentro de uma grande ORG, o 360, em que todos os campos, componentes e dados possuem correlação uns com os outros. Por isso vemos campos e relatórios de outras BUs, como Combs 
     e Lubes. Além de prejudicar a usabilidade e dificultar a adesão de novos usuários, uma alteração de Lubes pode ter um efeito cascata em Combs ou Energia.</p>
     <p class="conteudo-paragrafo">Outro ponto de extrema relevância é a questão de Perfil, que hoje ainda não está bem desenhado no nosso dia a dia:</p>
     <span class="zoom"> (clique na imagem para dar zoom)</span>
-    <img src="sharingmodel1.png" class="sharingmodel1">
+    <img src="sharingmodel1.png" class="sharingmodel1" alt="Sharing Model">
     <p class="conteudo-paragrafo">Enquanto não for desenhado um perfil para cada escopo e suas limitações, ficaremos a mercê de alterações manuais em propriedades que não deveriam ser alteradas, como o número da UC, informação sensível e que se alterada afeta 
     o envio da lista de rateio para a distribuidora, contatos, etapas, data de fechamento, entre outras.</p>
     <br>
@@ -110,7 +111,7 @@
     Essas regras regem tudo, desde quantos cards aparecerão no funil quando a visualização for Kanban (200), a até quantos caracteres um filtro pode conter (1500). Portanto é importante notificar o administrador ou desenvolvedor, 
     quais são os campos ESSENCIAIS de cada subcategoria que precisará ficar disponível no relatório.</p>
     <br>
-    <img src="relatoriosf.png" class="relatoriosf">
+    <img src="relatoriosf.png" class="relatoriosf" alt="relatoriossf">
     <br>
     <p class="conteudo-paragrafo">A segunda forma é através do Tableau, que é uma ferramenta similar ao Power BI mas com integração nativa ao SalesForce. O Tableau consegue consumir as informações diretamente do Data Lake, 
     ignorando todas as divisões internas e criando visões interativas e mais robustas. (cenário ideal)</p>
