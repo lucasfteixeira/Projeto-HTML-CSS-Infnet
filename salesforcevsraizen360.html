@@ -12,17 +12,16 @@
 </head>
 
 <body>
-    <div class="app-bar">
+  <div class="app-bar">
     <div class="app-bar-esquerda">
-      <a target="_blank" href="https://www.salesforce.com/br/" class="app-bar-link">
+      <a target="_blank" href="https://www.salesforce.com/br/" class="app-bar-link-logo">
         <img src="salesforcelogo.png" alt="Logo da página" class="app-bar-logo">
       </a>
       <a target="_blank" href="https://revenda360.my.salesforce.com/" class="app-bar-link">SalesForce Raízen</a>
       <a target="_blank" href="https://trailhead.salesforce.com/pt-BR" class="app-bar-link">Trailhead - SalesForce</a>
-      
     </div>
     <div class="app-bar-direita">
-    <a target="_blank" href="https://www.raizen.com.br/" class="app-bar-link">Raízen, Redefinindo o futuro da energia</a>
+      <a target="_blank" href="https://www.raizen.com.br/" class="app-bar-link-raizen">Raízen, Redefinindo o futuro da energia</a>
     </div>
   </div>
   <div class="cabecalho">
@@ -74,20 +73,27 @@
     
     <p class="conteudo-paragrafo">Objetos são contêineres de informação, mas também oferecem funções especiais. Por exemplo, ao criar um objeto personalizado, a plataforma cria itens, como layout de página, para a interface de usuário automaticamente.</p>
     <br>
+    <div class="imagens-responsivas">
     <img src="unidadesalesforce.png" class="unidadesalesforce" alt="SalesForce">
+    </div>
 
-    <p class="conteudo-paragrafo">Apesar do SalesForce possuir mais de 1.241 campos padrões <a href="https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_list.htm"><span class="zoom">(fonte)</span></a>, 
-        a Org Raízen criou inúmeros outros. Essa criação afeta não só na usabilidade, como também no funcionamento de relatórios, painéis e fluxos.</p>
-    <p class="conteudo-paragrafo">Para exemplificar este impacto, a imagem abaixo mostra como o Objeto “Conta” se relaciona com outros objetos e componentes. <span class="zoom"> (clique na imagem para dar zoom)</span> </p>
+    <p class="conteudo-paragrafo">Apesar do SalesForce possuir mais de 1.241 campos padrões*,a Org Raízen criou inúmeros outros. Essa criação afeta não só na usabilidade, como também no funcionamento de relatórios, painéis e fluxos.</p>
+    <p><a href="https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_list.htm"><span class="zoom">*(fonte)</span></a></p>
+    <p class="conteudo-paragrafo">Para exemplificar este impacto, a imagem abaixo mostra como o Objeto “Conta” se relaciona com outros objetos e componentes.</p>
+    <p><span class="zoom"> (clique na imagem para dar zoom)</span></p>
     
+    <div class="imagens-responsivas">
     <a href="https://architect.salesforce.com/1/asset/immutable/s/a566708/assets/images/data-models/sales-cloud-overview-data-model.png" target="_blank"><img src="sales-cloud-overview-data-model.png" class="cloud-overview" alt="Cloud Overview"></a>
+    </div>
     <br>
     <p class="conteudo-paragrafo">Mas na prática, como podemos ver esse impacto no nosso dia a dia?</p>
     <p class="conteudo-paragrafo">De várias formas. Hoje a Raízen executa o SalesForce dentro de uma grande ORG, o 360, em que todos os campos, componentes e dados possuem correlação uns com os outros. Por isso vemos campos e relatórios de outras BUs, como Combs 
     e Lubes. Além de prejudicar a usabilidade e dificultar a adesão de novos usuários, uma alteração de Lubes pode ter um efeito cascata em Combs ou Energia.</p>
     <p class="conteudo-paragrafo">Outro ponto de extrema relevância é a questão de Perfil, que hoje ainda não está bem desenhado no nosso dia a dia:</p>
     <span class="zoom"> (clique na imagem para dar zoom)</span>
-    <img src="sharingmodel1.png" class="sharingmodel1" alt="Sharing Model">
+    <div class="imagens-responsivas">
+    <a href="https://essencecode.netlify.app/post/sharing-objects-3/#gallery" target="_blank"><img src="sharingmodel1.png" class="sharingmodel1" alt="Sharing Model"></a>
+    </div>
     <p class="conteudo-paragrafo">Enquanto não for desenhado um perfil para cada escopo e suas limitações, ficaremos a mercê de alterações manuais em propriedades que não deveriam ser alteradas, como o número da UC, informação sensível e que se alterada afeta 
     o envio da lista de rateio para a distribuidora, contatos, etapas, data de fechamento, entre outras.</p>
     <br>
@@ -111,7 +117,9 @@
     Essas regras regem tudo, desde quantos cards aparecerão no funil quando a visualização for Kanban (200), a até quantos caracteres um filtro pode conter (1500). Portanto é importante notificar o administrador ou desenvolvedor, 
     quais são os campos ESSENCIAIS de cada subcategoria que precisará ficar disponível no relatório.</p>
     <br>
+    <div class="imagens-responsivas">
     <img src="relatoriosf.png" class="relatoriosf" alt="relatoriossf">
+    </div>
     <br>
     <p class="conteudo-paragrafo">A segunda forma é através do Tableau, que é uma ferramenta similar ao Power BI mas com integração nativa ao SalesForce. O Tableau consegue consumir as informações diretamente do Data Lake, 
     ignorando todas as divisões internas e criando visões interativas e mais robustas. (cenário ideal)</p>
@@ -136,9 +144,36 @@
 
         
   </div>
-<footer>
-  <div></div>
-</footer>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">      
+        <ul>
+          <h4>Onboarding (TBD)</h4>
+          <li><a href="#" >Inside Sales - Conceito</a></li>
+          <li><a href="#" >Evolução da estrutura</a></li>
+          <li><a href="#" >O que é Geração Dsitribuída</a></li>
+          <li><a href="#" >Papéis e responsabilidades</a></li>
+          <li><a href="#" >Processo comercial</a></li>
+          <li><a href="#" >Glossário</a></li>
+          <li><a href="#" >FAQ</a></li>
+          <li><a href="#" >Indicações de empresas</a></li>
+        </ul>
+      </div>
+      <div class="footer-grid-links">      
+        <ul>
+          <h4>Links importantes</h4>
+          <li><a target="_blank" href="https://academy.hubspot.com/pt/courses/inbound?library=true&" >Certificação Hubspot</a></li>
+          <li><a target="_blank" href="https://university.br.rockcontent.com/courses/inside-sales-cert" >Certificação RockContent</a></li>
+          <li><a target="_blank" href="https://open.spotify.com/show/2gSDMUj7dhWwWhxKZxktWE" >Podcast - Cast for Closers</a></li>
+          <li><a target="_blank" href="https://open.spotify.com/show/4U2BlsHRMYGIKpXgAcl613" >Podcast - Supervendedores</a></li>
+          <li><a target="_blank" href="https://www.amazon.com.br/Receita-Previs%C3%ADvel-Predictable-Revenue-revolucion%C3%A1ria/dp/8551301179" >Livro - Receita Previsível</a></li>
+          <li><a target="_blank" href="https://www.amazon.com.br/Customer-Success-empresas-inovadoras-descobriram-ebook/dp/B075RCJQ5K/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3CNQZMUTZ3MID&keywords=customer+success&qid=1676827710&s=books&sprefix=customer+succes%2Cstripbooks%2C241&sr=1-3" >Livro - Customer Success</a></li>
+          <li><a target="_blank" href="https://raizen.csod.com/LMS/catalog/Welcome.aspx?tab_page_id=-67&tab_id=-2" >Universidade Raízen</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/@abarbararubim/featured" >Bárbara Rubim - Especialista do setor elétrico</a></li>
+        </ul>
+      </div>
+      </div>
+  </footer>
 </body>
 
 </html>
