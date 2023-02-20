@@ -6,11 +6,12 @@ body {
 }
 
 h1 {
-  margin: 0;
+  margin-left: 8px;
 }
 
 p {
-  margin: 0;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .app-bar {
@@ -75,7 +76,7 @@ p {
 }
 
 .cabecalho-conteudo {
-  width: 800px;
+  width: 100%;
   margin: auto;
 }
 
@@ -91,6 +92,7 @@ p {
   padding-right: 8px;
   border-radius: 12px;
   font-size: 14px;
+  margin-left: 8px;
 }
 
 span .tag-r {
@@ -516,7 +518,6 @@ span .tag-r {
 }
 
 .Voltar {
-
   background-color: #00A1E0;
   color: white;
   padding-top: 0px;
@@ -527,7 +528,7 @@ span .tag-r {
 .Voltar a{
   color: white;
   font-weight: 400;
-}
+  }
 
 ul li {
 padding-top: 10px;
