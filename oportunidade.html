@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>Playbook SalesForce</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="app-bar">
+      <div class="app-bar-esquerda">
+        <a target="_blank" href="https://www.salesforce.com/br/" class="app-bar-link-logo">
+          <img src="salesforcelogo.png" alt="Logo da página" class="app-bar-logo">
+        </a>
+        <a target="_blank" href="https://revenda360.my.salesforce.com/" class="app-bar-link">SalesForce Raízen</a>
+        <a target="_blank" href="https://trailhead.salesforce.com/pt-BR" class="app-bar-link">Trailhead - SalesForce</a>
+      </div>
+      <div class="app-bar-direita">
+        <a target="_blank" href="https://www.raizen.com.br/" class="app-bar-link-raizen">Raízen, Redefinindo o futuro da energia</a>
+      </div>
+    </div>
+    <div class="cabecalho">
+      <div class="cabecalho-conteudo">
+        <div class="lista-tags">
+          <span class="tag">Oportunidade</span>
+          <span class="tag">Ciclo de vendas</span>
+          <span class="tag">Contrato assinado</span>
+          </div>
+        <h1 class="cabecalho-titulo">Oportunidade - Facilitadores da tomada de decisão</h1>
+        <p class="cabecalho-descricao">Consideração da solução e tomada de decisão, as principais etapas de uma Oportunidade dentro do funil comercial. </p>
+      </div>
+    </div>
+    <div class="botao-menu-voltar">  
+      <div class="Voltar"><span><a href="https://lucasfteixeira.github.io/Projeto-HTML-CSS-Infnet/" class="app-bar-link">Página Inicial - Voltar</a></span> </div>
+  
+    <span class="botao-menu" onclick="openNav()">&#9889; Menu</span>
+    <script>
+      function openNav() {
+        document.getElementById("ismenu-lateral").style.width = "350px";
+      }
+      
+      function closeNav() {
+        document.getElementById("ismenu-lateral").style.width = "0";
+      }
+      </script>
+         </div>
+    <div id="ismenu-lateral" class="menu-lateral">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://lucasfteixeira.github.io/Projeto-HTML-CSS-Infnet/crmconceito">CRM - O conceito</a>
+      <a href="https://lucasfteixeira.github.io/Projeto-HTML-CSS-Infnet/salesforceeseuconceito">CRM 1º do Mundo, SalesForce</a>
+      <a href="https://lucasfteixeira.github.io/Projeto-HTML-CSS-Infnet/salesforcevsraizen360">SalesForce padrão vs Raízen 360</a>
+      <a href="https://lucasfteixeira.github.io/Projeto-HTML-CSS-Infnet/lead">Lead</a>
+      <a href="https://lucasfteixeira.github.io/Projeto-HTML-CSS-Infnet/oportunidade">Oportunidade</a>
+      <a href="https://lucasfteixeira.github.io/Projeto-HTML-CSS-Infnet/padronizacaodedados">Padronização de dados</a>
+      <a href="https://lucasfteixeira.github.io/Projeto-HTML-CSS-Infnet/criacaoderelatorios">Criação de relatórios</a>
+      <a href="https://lucasfteixeira.github.io/Projeto-HTML-CSS-Infnet/criacaodepaineis">Criação de painéis</a>
+    </div>
+     <div class="conteudo">
+      <p class="conteudo-paragrafo">Hoje o processo de vendas da Raízen é divida em duas etapas, Leads e Oportunidades, o time responsável por Oportunidades são denominados "Closers".
+        Especialistas de produto e em técnicas de vendas, que buscam facilitar a tomada de decisão, unindo os objetivos da empresa, com a necessidade do mercado/futuro cliente.
+      </p>
+      <p class="conteudo-paragrafo">Diferente da etapa de Pré Venda, aqui todos os Leads estão esperando nosso contato, mais especificamente, uma apresentação de proposta comercial. 
+        Isso porque independente de canal ou esteira, todos os Leads foram aquecidos e engajados pela estrutura de SDRs. A apresentação da proposta pode ser feita de muitas formas,
+        por ligação, whats, enviada por e-mail ou chamada de vídeo. É importante destacar que já testamos todas as abordagens internamentes, isoladas e em conjunto, a que apresenta
+        a maior taxa de conversão é por vídeo chamada, isso porque não disputamos a atenção do Lead e conseguimos contornar melhor as objeções. </p>
+      <p class="conteudo-paragrafo">Outro fator que muda entre Lead e Oportunidade é no quesito de hierarquia sistêmica, como visto anteriormente, o SalesForce possui uma estrutura 
+        em blocos. Originalmente, a oportunidade só nasce no SalesForce se houver um Lead qualificado, ou seja, que passou por todas as etapas de Lead e consequentemente, houve a 
+        criação de uma "Conta". A "Conta" será o elo entre Lead e Oportunidade. 
+      </p>
+      <p class="conteudo-paragrafo">Passo a passo da qualificação do Lead para Oportunidade, exemplo prático:</p>   
+      <div class="videos-youtube">
+        <iframe class="leoshimura-qualificacao" src="https://minhaticloud-my.sharepoint.com/personal/cs334803_minhati_com_br/_layouts/15/embed.aspx?UniqueId=fcff37be-5052-4586-8e9d-f171657c7376&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" scrolling="no" allowfullscreen title="QUALIFICAÇÃO DE LEADS - SF.mp4"></iframe>
+      </div> 
+      <h3>Estrutura de campos(objetos) da Oportunidade</h3>
+      <p class="conteudo-paragrafo">Há alguns objetos obrigatórios dentro de cada quadrante do SalesForce, para Oportunidade essa questão é um pouco mais sensível. Isso porque
+        é através do módulo de Oportunidade que todos os processos subsequentes da estrutura de Renováveis podem ou não ser sequenciado. Um exemplo prático é o campo "Período de 
+        carênia" e "Usina", ambos os objetos são utilizados na elaboração do nosso contrato e na execução do mesmo ao longo da vida útil do Cliente internamente. Se por acaso a 
+        carência estiver preenchido 180 dias e o contrato estiver 90, o cliente ou a Raízen podem ser lesados financeiramente. 
+    </p>
+      <p class="conteudo-paragrafo">Devido ao processo e ao CRM serem estruturas vivas, aquilo que é executado ou obrigatório hoje, pode não ser amanhã. No próximo módulo falaremos
+        mais a respeito de padronizações e boas práticas sobre o mesmo.
+      </p>
+      <h3>Gestão de funil e seus impactos</h3>
+      <p class="conteudo-paragrafo">O time de Planejamento (SP - Diretoria de Renováveis), cálcula os objetivos mensais de acordo com a vacância vs o que está presente no funil.
+        Caso não haja Leads ou Oportunidades o suficiente para o atingimento da meta, quem deverá fornecer e viabilizar uma estratégia de curto prazo são os donos dos canais. Caso 
+        o cenário seja o contrário, onde há Leads e Oportunidades o suficiente para sanar as vacâncias do mês, os responsáveis pela execução e atingimento de meta será o Comercial.
+      </p>
+      <p class="conteudo-paragrafo">Para ajudar na manutenção do funil há um objeto auxiliar, "Probabilidade", quando assinalado "Alta", significa que há uma chance de fechar a Oportunidade
+        nos próximos 30 dias. Já o status "média" significa que há a necessidade de convencer mais de um decisor ou que o processo ainda depende de validações externas. Por fim, o status
+        "baixa" sinaliza uma possível perda e assim como os Leads, há motivos específicos de Perda para caso a caso. Todos esses campos dependem do preenchimento manual, visto que
+        é um indicador individual de gestão de funil. A recomendação é que não haja nenhuma oportunidade, salvo as grandes negociações, com mais de 30 dias parados na mesma etapa.
+      </p>
+      <p class="conteudo-paragrafo">3 dicas para ajudar os vendedores na gestão do seu funil no dia a dia:</p>       
+      <div class="videos-youtube">    
+<iframe class="supervendedores-3dicas" src="https://www.youtube.com/embed/Y-T9hBvUof4?start=27" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      <p class="conteudo-paragrafo">Por estes motivos, é de extrema importância manter o funil atualizado. Seguindo as diretrizes do seu gestor imediato e unindo com a necessidade
+        do negócio. Lembre-se, o seu funil e as informações contidas nele serve de insumo para múltiplas áreas e é SUA responsabilidade gerenciar todos estes fatores</p>
+      <h3>Para fazer uma gestão apropriada do funil, precisamos saber quais são as fases das Oportunidades do SalesForce e suas definições</h3> 
+      <ul>
+        <li>Identificado: Essa etapa contém todos os Leads que foram Qualificados (backlog) pelos SDRs e ainda não houve nenhuma interação entre o Closer e o Lead. É uma fase
+            transitória, onde o SDR deve confirmar a data e hora dda apresentação e o Closer precisa garantir que todas as informações estão devidamente preenchidas para elaborar
+            uma proposta e conduzir uma boa apresentação;
+        </li>
+        <li>Proposta Criada: Fase de preparo e apresentação de proposta. O(A) Closer deve preparar os materiais visuais para a apresentação, fazer uma pesquisa breve sobre a empresa
+            que participará da reunião e montar um cronograma de apresentação, deixando claro as respostas para as possíveis dores e objeções captadas pelo time de SDR durante a etapa
+            de discovery. Observação: Caso o Lead não compareça a apresentação, a reunião será considerada como No-show, sendo necessário o reagendamento por parte do time de Pré Venda.
+            Ainda não temos um campo no SalesForce para tal, por isso, fazemos toda a gestão dos No-show's e agendamentos em uma planilha online compartilhada;
+        </li>
+        <li>Em negociação: Reunião de apresentação de proposta foi realizada e foi feito um alinhamento formal de próximos passos com o Lead. O(A) Closer terá a responsabilidade e objetivo
+            de manter o engajamento e aquecimento do lead, sanar possíveis dúvidas, acompanhar seu processo de decisão e mensurar assertivamente a probabilidade de fechamento no objeto 
+            "Probabilidade";
+        </li>
+        <li>Migração de titularidade: Desde o dia 15 de fevereiro de 2023 não precisamos mais usar esta fase, visto que todos os consórcios foram atualizados para permitir a venda de GD 
+            para empresas que possuem a fatura em CPF;
+        </li>
+        <li>Proposta aprovada: Coletar todos os documentos dos responsáveis legais e iniciar o fluxo contratual no SalesForce. Observação: É de responsabilidade do Closer garantir a qualidade
+            das informações, evitando retrabalho das demais áreas. Este ponto é KPI interno do Inside Sales;
+        </li>
+        <li>Contrato em Elaboração: Etapa que envolve a área de Back e Middle Office, isto é, Crédito, Cadastro, Integridades e Jurídico. Todo esse processo ainda é manual, tendo um SLA de
+            3 dias úteis;
+        </li>
+        <li>Contrato Emitido: Garantir a assinatura do contrato e finalização do procesos comercial</li>
+    </ul>
+       <p class="conteudo-paragrafo">Todas as etapas descritas aqui foram criadas no final de 2021, tanto de Lead quanto de Oportunidade. Ainda não houve tempo e mão de obra livre
+        para fazer as correções e espelhar de fato, a jornada de compra e venda de cada esteira. É fundamental que cada coordenador e gestor de vendas tenha desenhado e documentado
+        o processo de vendas que seu time deve executar, para conseguir fazer o "Dê => Para" de cada status, fase e objeto no SalesForce
+       </p>
+       <p class="conteudo-paragrafo">Para ajudar os coordenadores e gestores da área, há um Webinar conduzido pela Ploomes, empresa especializada em CRM B2B e a Escola Exchange,
+        a maior aceleradora de vendas do Brasil, sobre o tema:</p>
+        <div class="videos-youtube">
+            <iframe class="ploomes-exchange"src="https://www.youtube.com/embed/Gyc7smMriIM?start=297" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>      
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-grid">      
+          <ul>
+            <h4>Onboarding (TBD)</h4>
+            <li><a href="#" >Inside Sales - Conceito</a></li>
+            <li><a href="#" >Evolução da estrutura</a></li>
+            <li><a href="#" >O que é Geração Dsitribuída</a></li>
+            <li><a href="#" >Papéis e responsabilidades</a></li>
+            <li><a href="#" >Processo comercial</a></li>
+            <li><a href="#" >Glossário</a></li>
+            <li><a href="#" >FAQ</a></li>
+            <li><a href="#" >Indicações de empresas</a></li>
+          </ul>
+        </div>
+        <div class="footer-grid-links">      
+          <ul>
+            <h4>Links importantes</h4>
+            <li><a target="_blank" href="https://academy.hubspot.com/pt/courses/inbound?library=true&" >Certificação Hubspot</a></li>
+            <li><a target="_blank" href="https://university.br.rockcontent.com/courses/inside-sales-cert" >Certificação RockContent</a></li>
+            <li><a target="_blank" href="https://open.spotify.com/show/2gSDMUj7dhWwWhxKZxktWE" >Podcast - Cast for Closers</a></li>
+            <li><a target="_blank" href="https://open.spotify.com/show/4U2BlsHRMYGIKpXgAcl613" >Podcast - Supervendedores</a></li>
+            <li><a target="_blank" href="https://www.amazon.com.br/Receita-Previs%C3%ADvel-Predictable-Revenue-revolucion%C3%A1ria/dp/8551301179" >Livro - Receita Previsível</a></li>
+            <li><a target="_blank" href="https://www.amazon.com.br/Customer-Success-empresas-inovadoras-descobriram-ebook/dp/B075RCJQ5K/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3CNQZMUTZ3MID&keywords=customer+success&qid=1676827710&s=books&sprefix=customer+succes%2Cstripbooks%2C241&sr=1-3" >Livro - Customer Success</a></li>
+            <li><a target="_blank" href="https://raizen.csod.com/LMS/catalog/Welcome.aspx?tab_page_id=-67&tab_id=-2" >Universidade Raízen</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/@abarbararubim/featured" >Bárbara Rubim - Especialista do setor elétrico</a></li>
+          </ul>
+        </div>
+        </div>
+    </footer>
+  </body>
+  
+  </html>
