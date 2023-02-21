@@ -45,6 +45,10 @@ p {
   align-items: center;
 }
 
+.voltar-mobile {
+  display: none;
+}
+
 .app-bar-logo {
   width: relative;
   height: 60px;
@@ -433,6 +437,20 @@ p {
   align-items: center;
 }
 
+.app-bar-link-raizen{
+  display: none;
+}
+
+.voltar-mobile {
+  display: flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #113d4b;
+  font-weight: bold;
+  font-size: 12px;
+
+}
+
 .app-bar-logo {
   width: relative;
   height: 60px;
@@ -563,6 +581,7 @@ span .tag-r {
 }
 
 .Voltar {
+  display: none;
   background-color: #00A1E0;
   color: white;
   padding-top: 0px;
@@ -571,6 +590,7 @@ span .tag-r {
   }
 
 .Voltar a{
+  display: none;
   color: white;
   font-weight: 400;
     }
