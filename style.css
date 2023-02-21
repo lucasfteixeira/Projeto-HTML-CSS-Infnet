@@ -70,7 +70,7 @@ p {
   background-color: #00A1E0;
   color: white;
   padding-top: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 2px;
   box-sizing: border-box;
   box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
 }
@@ -78,7 +78,7 @@ p {
 .cabecalho-conteudo {
   width: 800px;
   margin: auto;
-}
+  }
 
 .lista-tags {
   margin-bottom: 12px;
@@ -103,7 +103,7 @@ span .tag-r {
 
 .cabecalho-titulo {
   font-size: 42px;
-  line-height: 1.2;
+  line-height: 0.2;
 }
 
 .conteudo {
@@ -509,7 +509,7 @@ span .tag-r {
   color: #113d4b;
   font-size: 20px;
   cursor: pointer;
-    }
+      }
 
  .menu-lateral {
   background-color: #113d4b;
@@ -573,7 +573,7 @@ span .tag-r {
 .Voltar a{
   color: white;
   font-weight: 400;
-  }
+    }
 
 ul li {
 padding-top: 10px;
