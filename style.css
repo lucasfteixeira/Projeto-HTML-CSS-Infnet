@@ -390,8 +390,9 @@ color: #00A1E0;
 display: flex;
 padding: 10px;  
 text-align: center;  
-width: 100%;
+width: 300px;
 justify-content: flex-end;
+
  
 }
 
@@ -399,7 +400,7 @@ justify-content: flex-end;
 display: flex;
 padding: 10px;  
 text-align: center;
-width: 100%;
+width: 400px;
 justify-content: flex-start;
     }
 
