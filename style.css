@@ -333,6 +333,28 @@ border: 0;
   border: 0px;
 }
 
+.como-criar-relatorio-sf {
+  width: 560px;
+  height: 315px;
+  border: 0px;
+}
+
+.criando-painel-sf {
+  width: 560px;
+  height: 315px;
+  border: 0px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #113d4b
+  }
+
+  ul li a:hover{
+    text-decoration: none;
+    color: #00A1E0;
+       }
+
 .footer-container{
 display: flex;
 flex-direction: row;
@@ -481,7 +503,7 @@ p {
 }
 
 .lista-tags {
-  margin-bottom: 12px;
+  margin: 8px; 
 }
 
 .tag {
@@ -492,8 +514,8 @@ p {
   padding-right: 8px;
   border-radius: 12px;
   font-size: 12px;
-  margin: 8px;
-}
+  margin: 0;
+  }
 
 span .tag-r {
   font-size: 10px;
