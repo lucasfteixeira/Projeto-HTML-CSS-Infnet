@@ -72,13 +72,13 @@
         <li><span class="obj-p">Objetos personalizados:</span> são objetos criados para armazenar informações específicas e únicas para cada B.U. Por exemplo Fatura, Usina, Distribuidora, Proposta etc.</li>
     </ul>
     
-    <p class="conteudo-paragrafo">Objetos são contêineres de informação, mas também oferecem funções especiais. Por exemplo, ao criar um objeto personalizado, a plataforma cria itens, como layout de página, para a interface de usuário automaticamente.</p>
+    <p class="conteudo-paragrafo">Objetos são contêineres de informação, mas também oferecem funções especiais. Por exemplo, ao criar um objeto personalizado, a plataforma cria itens, como layout de página e campos, para a interface de usuário automaticamente.</p>
     <br>
     <div class="imagens-responsivas">
     <img src="unidadesalesforce.png" class="unidadesalesforce" alt="SalesForce">
     </div>
 
-    <p class="conteudo-paragrafo">Apesar do SalesForce possuir mais de 1.241 campos padrões*,a Org Raízen criou inúmeros outros. Essa criação afeta não só na usabilidade, como também no funcionamento de relatórios, painéis e fluxos.</p>
+    <p class="conteudo-paragrafo">Apesar do SF possuir mais de 1241 objetos com seus respectivos campos padrão*,a Org Raízen criou inúmeros outros. Essa criação afeta não só na usabilidade, como também no funcionamento de relatórios, painéis e fluxos.</p>
     <p><a href="https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_list.htm"><span class="zoom">*(fonte)</span></a></p>
     <p class="conteudo-paragrafo">Para exemplificar este impacto, a imagem abaixo mostra como o Objeto “Conta” se relaciona com outros objetos e componentes.</p>
     <p><span class="zoom"> (clique na imagem para dar zoom)</span></p>
@@ -88,15 +88,15 @@
     </div>
     <br>
     <p class="conteudo-paragrafo">Mas na prática, como podemos ver esse impacto no nosso dia a dia?</p>
-    <p class="conteudo-paragrafo">De várias formas. Hoje a Raízen executa o SalesForce dentro de uma grande ORG, o 360, em que todos os campos, componentes e dados possuem correlação uns com os outros. Por isso vemos campos e relatórios de outras BUs, como Combs 
-    e Lubes. Além de prejudicar a usabilidade e dificultar a adesão de novos usuários, uma alteração de Lubes pode ter um efeito cascata em Combs ou Energia.</p>
-    <p class="conteudo-paragrafo">Outro ponto de extrema relevância é a questão de Perfil, que hoje ainda não está bem desenhado no nosso dia a dia:</p>
+    <p class="conteudo-paragrafo">De várias formas. Hoje a Raízen e todas as suas áreas de negócio estão dentro de uma única organização (ORG) de Salesforce, o Revenda 360, em que todos os campos, componentes, objetos e dados podem possuir correlação uns com os outros. 
+      Por isso vemos campos e relatórios de outras BUs, como Combs e Lubes. Além de prejudicar a usabilidade e dificultar a adesão de novos usuários, uma alteração de Lubes pode ter um efeito cascata em Combs ou Energia.</p>
+    <p class="conteudo-paragrafo">Outro ponto de extrema relevância é a questão de hierarquia de papéis (Papel e Perfil), que hoje não está bem desenhado para nosso dia a dia:</p>
     <span class="zoom"> (clique na imagem para dar zoom)</span>
     <div class="imagens-responsivas">
     <a href="https://essencecode.netlify.app/post/sharing-objects-3/#gallery" target="_blank"><img src="sharingmodel1.png" class="sharingmodel1" alt="Sharing Model"></a>
     </div>
-    <p class="conteudo-paragrafo">Enquanto não for desenhado um perfil para cada escopo e suas limitações, ficaremos a mercê de alterações manuais em propriedades que não deveriam ser alteradas, como o número da UC, informação sensível e que se alterada afeta 
-    o envio da lista de rateio para a distribuidora, contatos, etapas, data de fechamento, entre outras.</p>
+    <p class="conteudo-paragrafo">Enquanto não for desenhado uma hierarquia que atenda as limitações de função de cada time para seu escopo, ficaremos a mercê de alterações manuais em propriedades que não deveriam ser alteradas, como o número da UC,
+      informação sensível e que se alterada afeta o envio da lista de rateio para a distribuidora, contatos, etapas, data de fechamento, entre outras.</p>
     <br>
     <h3>Como é a divisão dos componentes e módulos do SalesForce</h3>
     <p class="conteudo-paragrafo">Agora que já vimos e entendemos um pouco sobre o conceito de CRM, do SalesForce e tivemos uma pequena iniciação de arquitetura, vamos explorar o que, quem e quando.</p>
@@ -105,7 +105,7 @@
     <p class="conteudo-paragrafo">O SalesForce possui 3 grandes módulos, Marketing Cloud, Sales Cloud e Service Cloud, todos interligados porém, com contratações independentes. Focaremos no Sales Cloud que é o módulo que temos o 
     domínio e utilizamos a mais tempo. 
     </p>
-    <p class="conteudo-paragrafo">Dentro do Sales temos diversas subcategorias, Lead, Oportunidade, Conta, Contato, Contratos, Produto, Atividades e muitas outras, cada subcategoria é considerada no SalesForce um “BigObject”, isso significa 
+    <p class="conteudo-paragrafo">Dentro do Sales temos diversas subcategorias, Lead, Oportunidade, Conta, Contato, Contratos, Produto, Atividades e muitas outras, cada subcategoria é considerada no SalesForce um “Objeto”, isso significa 
     que o volume de informações que é possível reter e cruzar é tão grande que se torna inimaginável. Essa arquitetura é um diferencial do SalesForce, os demais CRMs de mercado possuem uma estrutura simplificada, sendo o CRM um único objeto, o 
     que dificulta muito na personalização e no cruzamento de informações. Por isso os relatórios do SalesForce são tão completos, porque é possível tornar cada objeto, padrão ou não, em um campo de filtro/consulta.</p>
     <p class="conteudo-paragrafo">Então eu posso cruzar quantas atividades foram registradas com um Cliente (Etapa: Ganho) durante a sua jornada conosco? Em Lead e Oportunidade. </p>
