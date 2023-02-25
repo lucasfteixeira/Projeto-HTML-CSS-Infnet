@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>Playbook SalesForce</title>
+  <link rel="stylesheet" href="indicacao.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="barra-superior-container">
+    <div class="logo-raizen"><img src="logoraizen.svg" alt="Logo Raízen"></div>
+</div>
+<div class="section">
+    <H1>Economia com sustentabilidade</H1>
+    <span>Sua energia 100% renovável até 20% mais barata,<br>sem custo de instalação ou fidelidade</span>
+</div>
+
+<div class="como-funciona">
+    <div class="imagens-responsivas">
+    <img src="comofunciona.png" alt="Geração distribuída - Raízen">
+    <img src="solucaocerta.png" alt="Geração distribuída - Raízen">
+    </div>
+</div>
+
+<!-- formulário -->
+
+<div class="form-container">
+    <form class="form-indicacao" method="post" action="https://getform.io/f/7fd4e9fd-b14b-4e31-9098-7456343aca59">
+        <h2>Dados da indicação</h2>
+        <div class="form-item">
+            <label for="fnome">Nome completo</label>
+            <input type="text" placeholder="Digite seu nome" id="fnome" name="fnome" class="form-campo-texto" required minlength="5" maxlength="40">
+        </div>
+        <div class="form-item">
+            <label for="empresa-nome">Qual a sua empresa?</label>
+            <input type="text" placeholder="Razão social ou nome fantasia" id="empresa-nome" name="empresa-nome" class="form-campo-texto" required minlength="5" maxlength="40">
+        </div>
+        <div class="form-item">
+            <label for="celular">Telefone ou Celular</label>
+            <input type="tel" placeholder="DDD + Número - Ex: 011999998888" id="celular" name="celular" class="form-campo-texto"    required minlength="11" maxlength="12">    
+        </div>
+        <div class="form-item-inline">
+            <span>Já possui alguma tipo de geração de energia renovável?</span>
+            <input type="radio" name="possui-gd" id="sim-ou" class="checkbox" value="Sim" required>
+            <label for="sim-ou">Sim</label>
+            <input type="radio" name="possui-gd" id="ou-nao" class="checkbox" value="Não" required>
+            <label for="ou-nao">Não</label>
+        </div>
+        <div class="form-item">
+            <label for="cnpj">CNPJ da empresa indicada</label>
+            <input type="cnpj" placeholder="CNPJ" id="cnpj" name="cnpj" class="form-campo-texto"  required minlength="14" maxlength="14">
+        </div>
+        <div class="form-item">
+            <label for="fatura">Valor médio da sua fatura mensal de energia</label>
+            <input type="falor" placeholder="Exemplo: 1500" id="fatura" name="fatura" class="form-campo-texto"  required minlength="3" maxlength="6">    
+        </div>
+        <div class="form-item">
+            <textarea placeholder="Digite sua mensagem" name="form-mensagem" class="form-campo-textarea" rows="4" required minlength="16" maxlength="140"></textarea> 
+        </div>
+            <div class="form-item">
+            <input type="submit" value="Solicitar contato" class="form-botao-enviar">
+        </div>
+    </form>
+</div>
+
+
+
+
+</body>
